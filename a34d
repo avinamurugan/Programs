@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+	char str[100];
+	int i,count=0,sum,j,flag=0;
+	scanf("%s",str);
+	for(i=0;str[i]!='\0';i++){
+		count++;
+	}
+	for(i=0;i<count-1;i++){
+		if((str[i]>=65 && str[i]<=90)||(str[i] >=97 && str[i]<=122)){
+			sum=str[i+1]-48;
+			flag=1;
+	}
+		if(flag==1){
+		for(j=0;j<sum;j++){
+			printf("%c",str[i]);
+
+}
+flag=0;
+		}
+}
+return 0;
+}
