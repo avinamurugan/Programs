@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main(){
+	int num,i,rem,q,j,flag=0,n,sum;
+	scanf("%d",&num);
+	rem=num/2;
+	for(j=0;j<rem;j++){
+		sum=num-j;
+	for(i=2;i<rem;i++){
+		q=num%i;
+		if(q==0){
+			
+		flag=1;		
+		}
+
+}
+		if(flag==1){
+			printf("not prime");
+		}
+		else if(flag==0){
+			printf("prime");
+		}
+}
+return 0;
+}
