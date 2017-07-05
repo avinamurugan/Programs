@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main(){
+char str[100];
+int i,count=0,hash[1000];
+scanf("%s",str);
+for(i=0;str[i]!='\0';i++){
+	count++;
+}
+for(i=0;i<count;i++){
+	hash[str[i]%97]++;
+}
+for(i=0;i<count;i++){
+if(hash[str[i]%97]>=1){
+
+	printf("%c--->%d\n",str[i],hash[str[i]%97]);
+}
+hash[str[i]%97]=0;
+}
+return 0;
+}
