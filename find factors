@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+	int m,i,q;
+	scanf("%d",&m);
+	for(i=1;i<m;i++){
+		if(m%i==0){
+			q=m/i;
+		if(i<q){
+			printf("%d %d\n",i,q);
+}
+		else if(i==q){
+
+	printf("%d\n",i);
+}
+}
+}
+return 0;
+}
