@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void) {
+	int i,j,n,sum=0,l,temp;
+	scanf("%d",&n);
+	int arr[n][n];
+		j=n-1;
+		for(i=0;i<n;i++){
+			for(l=0;l<n;l++){
+				scanf("%d",&arr[i][l]);
+			}
+		}
+		for(i=0;i<n;i++){
+		sum+=arr[i][i];	
+				if(i!=j){
+				sum+=arr[i][j];
+				
+				}
+					j--;
+		}
+	printf("%d",sum);
+	return 0;
+}
