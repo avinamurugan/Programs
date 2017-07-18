@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main(){
+int i,j,n,k,l;
+clrscr();
+scanf("%d",&n);
+for(i=n;i!=0;i--){
+	for(j=i-1,k=n;j<n&&k!=0;j++,k--){
+	 printf("%d",k);
+	}
+	printf("\n");
+}
+getch();
+}
