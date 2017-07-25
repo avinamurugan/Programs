@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+void main(){
+	int i,n=0,l=0;
+	char str1[100],str[100];
+	clrscr();
+	scanf("%s",str);
+	for(i=0;str[i]!='\0';i++)
+	n++;
+	for(i=0;i<n;i++){
+	if(str[i]!=str[i+1]){
+		str1[l]=str[i];
+		l++;
+		}
+	}
+	for(i=0;i<l;i++){
+		printf("%c",str1[i]);
+	}
+	getch();
+	}
